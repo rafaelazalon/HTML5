@@ -1,0 +1,14 @@
+@media not screen {
+    img {
+        display: flexbox;
+        border: 0;
+
+    }
+}
+img {
+    border: 20PX solid crimson;
+}
+
+p {
+    flex-direction: row;
+}

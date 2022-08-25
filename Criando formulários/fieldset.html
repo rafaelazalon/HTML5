@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Receba um brince casa</title>
+    <style>
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header
+{
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #0f52a5;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+footer
+{
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    background: #f8f8f8;
+    color: #0f52a5;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;
+    margin: 30px auto;
+    height: 100%;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: sans-serif;
+    padding: 16px 0;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    margin: 10px 0 15px 0;
+}
+
+input {
+    height: 32px;
+    margin: 16px 0 16px 0;
+}
+
+button {
+    background: #0f52a5;
+    border: none;
+    height: 32px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 16px 0 0 0;
+}
+
+p {
+    margin: 20px 0 0 0;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #0f52a5;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <span>Revista</span>
+    </header>
+    <main>
+        <h1>Cadastro</h1>
+
+        <p>Estamos lançando uma nova revista e enviaremos o primeiro exemplar grátis para todos que se cadastrarem hoje no site.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula8/">
+
+            <fieldset>
+                <legend>Dados de contato</legend>
+
+                <label>Nome: </label>
+                <input placeholder="Digite seu nome completo" required type="text" name="nome"/>
+
+                <label>Email:</label>
+                <input placeholder="exemplo@email.com" type="email" name="email" />
+
+                <label>Telefone:</label>
+                <input placeholder="(XX) XXXXX-XXXX" type="tel" name="telefone" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados de entrega</legend>
+
+                <label>Endereço:</label>
+                <input placeholder="Rua, Avenida, Travessa..." type="text" name="endereco" />
+
+                <label>Número:</label>
+                <input type="number" name="numero" />
+
+                <label>Complemento:</label>
+                <input type="text" name="complemento" />
+            </fieldset>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+    </main>
+    <footer>
+        Copyright 2022 - Revista
+    </footer>
+</body>
+</html>

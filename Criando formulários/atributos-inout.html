@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculdade - Matrícula</title>
+   <style>
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #8b0600;
+    color: #f8f8f8;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+footer
+{
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    background: #f8f8f8;
+    color: #8b0600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;
+    margin: 30px auto;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: sans-serif;
+    padding: 16px 0;
+}
+
+input {
+    height: 32px;
+    margin: 16px 0 16px 0;
+}
+
+button {
+    background: #8b0600;
+    border: none;
+    height: 32px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 16px 0 0 0;
+}
+
+p {
+    margin: 20px 0 0 0;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #8b0600;
+}
+
+   </style>
+</head>
+<body>
+    <header>
+        <span>Faculdade</span>
+    </header>
+    <main>
+        <h1>Matrícula</h1>
+
+        <p>Preencha os campos abaixo para criar a sua matrícula e seu cadastro no ambiente virtual da faculdade.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula3/">
+
+            <label>Nome: </label>
+            <input placeholder="Digite seu nome completo" type="text" name="nome" required />
+
+            <label>Data de Nascimento: </label>
+            <input type="date" name="data_nascimento" max="2004-03-01" required/>
+
+            <label>Email:</label>
+            <input placeholder="exemplo@email.com" type="email" name="email" required />
+
+            <label>Telefone:</label>
+            <input placeholder="(XX) XXXXX-XXXX" type="tel" name="telefone" minlength="14" required />
+
+            <label>Melhor dia para vencimento:</label>
+            <input placeholder="Valores entre 10 e 20" type="number" name="dia_vencimento" min="10" max="20" required />
+
+            <label>Login:</label>
+            <input placeholder="Digite seu login" type="text" name="login" minlength="3" required/>
+
+            <label>Senha:</label>
+            <input placeholder="Digite sua senha" type="password" name="senha" minlength="4" maxlength="8" required />
+
+            <button type="submit">Enviar Matrícula</button>
+
+        </form>
+    </main>
+    <footer>
+        Copyright 2022 - Faculdade
+    </footer>
+</body>
+</html>
